@@ -44,8 +44,10 @@ main {
 }
 
 section#portada img {
-    width: 100%;
+    width: 50%;  /* Reducimos el tamaño de la imagen */
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 h2 {
@@ -56,6 +58,11 @@ h2 {
 h3 {
     font-size: 1.5em;
     margin-top: 20px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-top: 15px;
 }
 
 table {
