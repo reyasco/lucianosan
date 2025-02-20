@@ -1,76 +1,92 @@
-/* Estilos generales */
 body {
-    font-family: "Times New Roman", serif;
-    background-color: #f5f5f3;
-    color: #000;
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: white;
     margin: 0;
     padding: 0;
 }
 
-/* Encabezado */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: 1px solid #000;
+    background-color: #000;
 }
 
-.logo {
-    font-size: 24px;
+header .logo {
+    font-size: 1.5em;
     font-weight: bold;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
+    list-style-type: none;
 }
 
 nav ul li {
-    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #000;
+    font-size: 1em;
     font-weight: bold;
 }
 
-/* Secciones */
-main {
-    width: 60%;
-    margin: auto;
-    padding: 40px 0;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-section {
-    margin-bottom: 60px;
+main {
+    padding: 20px;
+}
+
+section#portada img {
+    width: 100%;
+    height: auto;
 }
 
 h2 {
-    border-bottom: 1px solid #000;
-    padding-bottom: 5px;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-/* Imágenes */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
+h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
 }
 
-/* Media queries para móviles */
-@media (max-width: 768px) {
-    main {
-        width: 90%;
-    }
-    
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+section#trabajos iframe {
+    margin-top: 20px;
+    width: 100%;
+}
+
+section#contacto a {
+    color: #e60000;
+    text-decoration: none;
+}
+
+section#contacto a:hover {
+    text-decoration: underline;
 }

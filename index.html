@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luciano Sánchez</title>
+    <title>Luciano Sánchez - Portafolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,16 +11,52 @@
         <div class="logo">Luciano Sánchez</div>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#escucha">Escucha</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
+    
     <main>
-        <h1>Bienvenido a mi portafolio</h1>
-        <p>Este es mi sitio web profesional donde muestro mi trabajo.</p>
+        <section id="portada">
+            <img src="DSC01951.jpg" alt="Luciano Sánchez">
+        </section>
+        
+        <section id="bio">
+            <h2>Bio</h2>
+            <p>Luciano Sánchez Soto ("Rey Asco") es músico, productor y compositor con experiencia en batería, arreglos, producción musical, grabación, mezcla y mástering.</p>
+            <h3>Estudios:</h3>
+            <table>
+                <tr><td>LORD Music Center</td><td>Batería (2002-2003)</td></tr>
+                <tr><td>Christian Gómez</td><td>Batería (2003-2004)</td></tr>
+                <tr><td>Javier Soto</td><td>Batería (2004-2005)</td></tr>
+                <!-- Agregar el resto de los estudios -->
+            </table>
+            <h3>Becas:</h3>
+            <ul>
+                <li>“Despoblado” (2012) - Programa de Estímulos a la Creación y al Desarrollo Artístico (PECDA), Categoría: Jóvenes creadores.</li>
+                <li>“Hosco” (2020) - PECDA, Categoría: Jóvenes creadores.</li>
+                <li>“Laboratorio de Resonancia compartida” (2024) - Programa Habita la Escena.</li>
+            </ul>
+            <!-- Agregar más información de la biografía si es necesario -->
+        </section>
+
+        <section id="trabajos">
+            <h2>Trabajos</h2>
+            <h3>Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Sl-8ZOVwyVQ?si=UsjbSXk2sS24FZCr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+            <h3>Escucha</h3>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1972702660&color=%23e60000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Email: <a href="mailto:luciano.sanchoto@gmail.com">luciano.sanchoto@gmail.com</a></p>
+            <p>Teléfono: 5565066508</p>
+        </section>
     </main>
 </body>
 </html>
