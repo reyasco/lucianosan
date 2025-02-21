@@ -11,45 +11,32 @@
         <div class="logo">Luciano Sánchez</div>
         <nav>
             <ul>
-               
-                <li><a href="#trabajos 🎧">Trabajos</a></li>
-                <li><a href="#bio">Bio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#trabajos" class="nav-link">Trabajos</a></li>
+                <li><a href="#bio" class="nav-link">Bio</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
-        
     </header>
-    <br><br><br> 
+    
     <main>
         <section id="portada">
             <!-- Imagen más pequeña -->
             <img src="DSC01951.jpg" alt="Luciano Sánchez" class="imagen-portada">
-            <p>@Julio Rey</p>  <!-- Texto debajo de la imagen -->
+            <p>@Julio Rey</p>  
         </section>
-
-        <p>Luciano Sánchez Soto ("Rey Asco") es músico, productor y compositor con experiencia en batería, arreglos, producción musical, grabación, mezcla y mástering.</p>
-
-        <br><br><br><br><br><br><br><br><br><br><br><br>  
 
         <section id="trabajos">
             <h1>Trabajos</h1>
-            <br><br><br><br><br> 
-            <h3></h3>
+            <br><br><br><br>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Sl-8ZOVwyVQ?si=UsjbSXk2sS24FZCr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <br><br><br><br><br><br><br><br> 
-
+            <br><br><br>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/OS43-RqHjWI?si=L4sDT6nby6tC9AVq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <br><br><br><br><br><br><br><br><br><br>
-  
-            <h3></h3>
+            <br><br><br>
             <iframe width="300" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1972702660&color=%23e60000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            </section>
-        <br><br><br><br><br><br><br><br><br><br><br>
+        </section>
+
         <section id="bio">
             <h1>Bio</h1>
-            
-            <br><br><br><br>
             <img src="3.jpg" alt="Luciano Sánchez" class="imagen-portada">
             <p>@Adrián Escárpita</p>
             
@@ -236,6 +223,23 @@
             <br><br><br>
         </section>
     </main>
+    <script>
+        // Script para desplazar la página a las secciones y evitar que se corten
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                // Para las secciones, desplazamos la página con un pequeño offset para no cortar el texto
+                window.scrollTo({
+                    top: targetSection.offsetTop - 80, // Desplazamiento hacia abajo para que no se corte
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
 
