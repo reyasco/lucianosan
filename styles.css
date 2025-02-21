@@ -41,9 +41,9 @@ img[src*="Hosco.jpg"] {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;  /* Alineación a la izquierda */
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;  /* Reducido el padding para que la altura sea menor */
     background-color: #000;  /* Gris oscuro para la barra superior */
     position: fixed;  /* Fija el header en la parte superior */
     top: 0;  /* Asegura que quede en la parte superior */
@@ -54,7 +54,7 @@ header {
 }
 
 header .logo {
-    font-size: 0.825em; /* 45% más pequeña que el tamaño anterior */
+    font-size: 1em; /* Ajustado al mismo tamaño que las otras palabras del header */
     font-weight: bold;
     color: #fff; /* Color de la fuente del logo */
 }
