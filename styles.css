@@ -5,7 +5,6 @@ body {
     color: #fff;  /* Texto blanco */
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth; /* Desplazamiento suave */
 }
 
 /* Ajustamos las imágenes DSC01951.jpg, 3.jpg y 12.jpg */
@@ -63,12 +62,10 @@ header .logo {
 nav ul {
     display: flex;
     list-style-type: none;
-    margin-left: 20px;
 }
 
 nav ul li {
     margin: 0 15px;
-    position: relative; /* Para el submenú */
 }
 
 nav ul li a {
@@ -82,32 +79,22 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Menú desplegable Bio */
-nav ul li:hover .sub-menu {
-    display: block;
-}
-
-.sub-menu {
-    display: none;
-    position: absolute;
-    top: 100%; /* Para que el submenú aparezca justo debajo de "Bio" */
-    left: 0;
-    background-color: #333;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    min-width: 200px;
-    padding: 10px;
-}
-
-.sub-menu li {
-    margin: 5px 0;
-}
-
 /* Ajuste de margen para evitar que el contenido se superponga al header */
 main {
     padding-top: 80px;  /* Añade un espacio arriba para que no se sobreponga el contenido */
 }
 
+
+img[src*="DSC01951.jpg"] + p,
+img[src*="3.jpg"] + p,
+img[src*="12.jpg"] + p {
+    font-size: 0.5em;  /* Texto más pequeño */
+    text-align: center;  /* Centrado */
+    color: #fff;  /* Blanco para el texto */
+    margin-top: 5px;
+}
+
+/* Centramos los títulos */
 h1, h2, h3, h4 {
     text-align: center;
     color: #fff; /* Blanco para los títulos */
@@ -179,3 +166,4 @@ table caption {
     font-weight: bold;
     margin: 10px 0;
 }
+
