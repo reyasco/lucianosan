@@ -41,34 +41,27 @@ img[src*="Hosco.jpg"] {
 
 header {
     display: flex;
-    flex-direction: column;  /* Cambiar a columna para que "Luciano" y "Sánchez" estén en líneas separadas */
-    justify-content: center;  /* Centra verticalmente */
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;  /* Añadir más espacio arriba y abajo para evitar que se corte */
+    padding: 20px;
     background-color: #333;  /* Gris oscuro para la barra superior */
     position: fixed;  /* Fija el header en la parte superior */
-    top: 0;
-    left: 0;
+    top: 0;  /* Asegura que quede en la parte superior */
+    left: 0;  /* Alinea a la izquierda */
     width: 100%;  /* Asegura que el header ocupe todo el ancho */
-    z-index: 1000;
-    box-sizing: border-box;  /* Asegura que el padding no cause problemas de corte */
-    height: auto;  /* El alto será automático según el contenido */
-    min-height: 50px;  /* Establecer un mínimo de altura para evitar que se colapse */
+    z-index: 1000;  /* Asegura que el header quede encima de otros elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para el header */
 }
 
-/* Logo */
 header .logo {
-    font-size: 1.5em;  /* Tamaño del logo */
+    font-size: 1.5em;
     font-weight: bold;
-    color: #fff;  /* Color blanco para el logo */
-    line-height: 1;  /* Evita que haya mucho espacio entre "Luciano" y "Sánchez" */
+    color: #fff; /* Color de la fuente del logo */
 }
 
-/* Menú de navegación */
 nav ul {
     display: flex;
     list-style-type: none;
-    margin-top: 10px;  /* Espacio entre el logo y el menú */
 }
 
 nav ul li {
@@ -86,28 +79,9 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Para dispositivos móviles */
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;  /* Asegura que el logo y el menú estén apilados */
-        justify-content: center;
-        align-items: center;
-        padding: 10px 20px;
-    }
-
-    nav ul {
-        flex-direction: column;  /* Cambia el menú a columna en pantallas pequeñas */
-        margin-top: 10px;
-    }
-
-    nav ul li {
-        margin: 5px 0;  /* Reduce el margen entre los ítems del menú */
-    }
-
-    header .logo {
-        font-size: 1.5em;  /* Mantener el tamaño de la fuente */
-        line-height: 1.2;  /* Mejora el espaciado entre "Luciano" y "Sánchez" */
-    }
+/* Ajuste de margen para evitar que el contenido se superponga al header */
+main {
+    padding-top: 80px;  /* Añade un espacio arriba para que no se sobreponga el contenido */
 }
 
 
