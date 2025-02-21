@@ -9,21 +9,21 @@ body {
 
 /* Ajustamos las imágenes DSC01951.jpg, 3.jpg y 12.jpg */
 img[src*="DSC01951.jpg"] {
-    width: 40%;  /* Tamaño fijo */
+    width: 70%;  /* Tamaño fijo */
     height: auto;  /* Mantiene la proporción */
     display: block;
     margin: 0 auto; /* Centra la imagen */
 }
 
 img[src*="3.jpg"] {
-    width: 45%;  /* Tamaño fijo */
+    width: 70%;  /* Tamaño fijo */
     height: auto;  /* Mantiene la proporción */
     display: block;
     margin: 0 auto; /* Centra la imagen */
 }
 
 img[src*="12.jpg"] {
-    width: 45%;  /* Tamaño fijo */
+    width: 70%;  /* Tamaño fijo */
     height: auto;  /* Mantiene la proporción */
     display: block;
     margin: 0 auto; /* Centra la imagen */
