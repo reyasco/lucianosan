@@ -45,7 +45,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;  /* Ajustamos el padding para que sea más pequeño */
-    background-color: #333;  /* Gris oscuro para la barra superior */
+    background-color: #000;  /* Gris oscuro para la barra superior */
     position: fixed;  /* Fija el header en la parte superior */
     top: 0;  /* Asegura que quede en la parte superior */
     left: 0;  /* Alinea a la izquierda */
