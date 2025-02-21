@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Header con fondo gris claro y texto negro */
+/* Header con fondo gris oscuro y texto blanco */
 header {
     display: flex;
     justify-content: space-between;
@@ -57,10 +57,11 @@ section#portada img, section#bio img, section#trabajos img {
     margin: 0 auto; /* Centra la imagen */
 }
 
-/* Ajustamos la imagen 3.jpg (aplicamos la misma lógica) */
-.imagen-portada {
-    width: 100%;  /* Asegura que la imagen ocupe todo el ancho disponible */
-    max-width: 100%;  /* Impide que se estire más allá del contenedor */
+/* Ajustamos la imagen 3.jpg para que no sea demasiado ancha */
+img[src*="3.jpg"] {
+    width: 100%;  /* Ajuste para que no sea demasiado ancha */
+    max-width: 100%;  /* Asegura que no se estire demasiado */
+    height: auto;
     display: block;
     margin: 0 auto;
 }
@@ -104,10 +105,13 @@ section#trabajos iframe {
     margin: 0 auto; /* Centra el iframe */
 }
 
-/* Asegurar que los videos de SoundCloud y YouTube se ajusten */
+/* Ajustes para el reproductor de SoundCloud */
 section#trabajos iframe[src*="soundcloud.com"] {
-    max-width: 100%; /* Asegura que el reproductor de SoundCloud se ajuste al ancho del dispositivo */
-    height: 300px; /* Ajusta el alto del iframe para que se vea correctamente */
+    max-width: 600px; /* Lo hace un poco más estrecho */
+    width: 90%;  /* En dispositivos pequeños, se ajusta al 90% del ancho de la pantalla */
+    height: 600px; /* Aumentamos la altura para que se vea más contenido */
+    display: block;
+    margin: 0 auto; /* Centrado del reproductor */
 }
 
 /* Centrar toda la sección de contacto */
@@ -125,16 +129,7 @@ section#contacto a:hover {
     text-decoration: underline;
 }
 
-/* Ajustes para imágenes grandes como 2.jpg y 3.jpg */
-img {
-    width: 100%;
-    max-width: 100%;  /* Evitar que las imágenes se estiren más de lo necesario */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Ajustes para la imagen 2.jpg si no carga */
+/* Ajustes para imágenes grandes como 2.jpg */
 img[src*="2.jpg"] {
     display: block;
     margin: 0 auto;
@@ -142,12 +137,10 @@ img[src*="2.jpg"] {
     max-width: 100%;  /* Asegura que no se sobrepase del contenedor */
 }
 
-/* Ajustes para la imagen 3.jpg */
-img[src*="3.jpg"] {
-    width: 100%;  /* Ajuste para que no sea demasiado ancha */
-    height: auto;
-    max-width: 100%;  /* Asegura que no se estire demasiado */
+/* Ajustes para la imagen 2.jpg si no carga */
+img[src*="2.jpg"] {
     display: block;
     margin: 0 auto;
+    width: 100%;  /* Asegura que se ajuste al 100% del ancho */
+    max-width: 100%;  /* No se debe estirar más allá de los límites */
 }
-
