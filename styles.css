@@ -9,8 +9,8 @@ body {
 
 /* Ajustamos las imágenes DSC01951.jpg, 3.jpg y 12.jpg */
 img[src*="DSC01951.jpg"] {
-    width: auto;  /* Tamaño fijo */
-    height: 30%;  /* Mantiene la proporción */
+    width: 40%;  /* Tamaño fijo */
+    height: auto;  /* Mantiene la proporción */
     display: block;
     margin: 0 auto; /* Centra la imagen */
 }
@@ -45,13 +45,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #fff;  /* Gris oscuro para la barra superior */
+    background-color: #000;  /* Gris oscuro para la barra superior */
 }
 
 header .logo {
     font-size: 1.5em;
     font-weight: bold;
-    color: #000; /* Color de la fuente del logo */
+    color: #fff; /* Color de la fuente del logo */
 }
 
 nav ul {
