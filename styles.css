@@ -43,14 +43,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #333;  /* Gris oscuro para la barra superior */
+    padding: 15px;
+    background-color: #000;  /* Gris oscuro para la barra superior */
     position: fixed;  /* Fija el header en la parte superior */
     top: 0;  /* Asegura que quede en la parte superior */
     left: 0;  /* Alinea a la izquierda */
     width: 100%;  /* Asegura que el header ocupe todo el ancho */
     z-index: 1000;  /* Asegura que el header quede encima de otros elementos */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para el header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para el header */
 }
 
 header .logo {
