@@ -9,21 +9,21 @@ body {
 
 /* Ajustamos las imágenes DSC01951.jpg, 3.jpg y 12.jpg */
 img[src*="DSC01951.jpg"] {
-    width: 250px;  /* Tamaño fijo */
+    width: 60%;  /* Tamaño fijo */
     height: auto;  /* Mantiene la proporción */
     display: block;
     margin: 0 auto; /* Centra la imagen */
 }
 
 img[src*="3.jpg"] {
-    width: 400px;  /* Tamaño fijo */
+    width: 60%;  /* Tamaño fijo */
     height: auto;  /* Mantiene la proporción */
     display: block;
     margin: 0 auto; /* Centra la imagen */
 }
 
 img[src*="12.jpg"] {
-    width: 400px;  /* Tamaño fijo */
+    width: 60%px;  /* Tamaño fijo */
     height: auto;  /* Mantiene la proporción */
     display: block;
     margin: 0 auto; /* Centra la imagen */
@@ -37,15 +37,7 @@ img[src*="Hosco.jpg"] {
     margin: 0 auto;  /* Centrado */
 }
 
-/* Texto debajo de cada imagen */
-img[src*="DSC01951.jpg"] + p,
-img[src*="3.jpg"] + p,
-img[src*="12.jpg"] + p {
-    font-size: 0.8em;  /* Texto pequeño */
-    text-align: center;  /* Centrado */
-    color: #fff;  /* Blanco para el texto */
-    margin-top: 5px;
-}
+
 
 /* Header con fondo gris oscuro y texto blanco */
 header {
@@ -80,6 +72,15 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+img[src*="DSC01951.jpg"] + p,
+img[src*="3.jpg"] + p,
+img[src*="12.jpg"] + p {
+    font-size: 0.5em;  /* Texto más pequeño */
+    text-align: center;  /* Centrado */
+    color: #fff;  /* Blanco para el texto */
+    margin-top: 5px;
 }
 
 /* Centramos los títulos */
