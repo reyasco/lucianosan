@@ -7,6 +7,34 @@ body {
     padding: 0;
 }
 
+/* Ajustamos las imágenes DSC01951.jpg, 3.jpg y 12.jpg */
+img[src*="DSC01951.jpg"],
+img[src*="3.jpg"],
+img[src*="12.jpg"] {
+    width: 250px;  /* Establecer un tamaño fijo para que las imágenes sean pequeñas */
+    height: auto;  /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/* Texto debajo de cada imagen */
+img[src*="DSC01951.jpg"] + p,
+img[src*="3.jpg"] + p,
+img[src*="12.jpg"] + p {
+    font-size: 0.8em;  /* Texto pequeño */
+    text-align: center;  /* Centrado */
+    color: #fff;  /* Blanco para el texto */
+    margin-top: 5px;
+}
+
+/* Ajustes para la imagen Hosco.jpg */
+img[src*="Hosco.jpg"] {
+    width: 80%;  /* Ajusta el tamaño de la imagen */
+    height: auto;
+    display: block;
+    margin: 0 auto;  /* Centrado */
+}
+
 /* Header con fondo gris oscuro y texto blanco */
 header {
     display: flex;
@@ -48,54 +76,7 @@ h1, h2, h3, h4 {
     color: #fff; /* Blanco para los títulos */
 }
 
-/* Ajustes para la imagen DSC01951 (portada) */
-section#portada img {
-    width: 300;  /* Hace que la imagen ocupe todo el ancho disponible */
-    height: auto;  /* Mantiene la proporción de la imagen */
-    max-width: 100%;  /* Asegura que no se sobrepase del contenedor */
-    display: block;
-    margin: 0 auto; /* Centra la imagen */
-}
-
-/* Ajustes para la imagen 3.jpg para que no sea demasiado ancha */
-img[src*="3.jpg"] {
-    width: 300;  /* Ajuste para que no sea demasiado ancha */
-    max-width: 100%;  /* Asegura que no se estire demasiado */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Títulos Bio y Trabajos: Agrandamos el tamaño */
-h1 {
-    font-size: 3em; /* Aumentamos el tamaño de los títulos principales */
-}
-
-h2 {
-    font-size: 2.5em;  /* Títulos de las secciones, tamaño más grande */
-}
-
-h3 {
-    font-size: 2em;
-}
-
-h4 {
-    font-size: 1.5em;
-}
-
-/* Ajustamos la visualización de las tablas */
-table {
-    width: 100%;
-    margin-top: 10px;
-    border-collapse: collapse;
-}
-
-table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-/* Ajustamos los iframes para que sean más estrechos en la vista móvil y centren todo */
+/* Ajustes para los iframes (videos) */
 section#trabajos iframe {
     margin-top: 20px;
     width: 100%;
@@ -127,20 +108,4 @@ section#contacto a {
 
 section#contacto a:hover {
     text-decoration: underline;
-}
-
-/* Ajustes para imágenes grandes como 2.jpg */
-img[src*="12.jpg"] {
-    display: block;
-    margin: 0 auto;
-    width: 300;  /* Hacer que se ajuste al 100% de la pantalla */
-    max-width: 100%;  /* Asegura que no se sobrepase del contenedor */
-}
-
-/* Ajustes para la imagen 2.jpg si no carga */
-img[src*="12.jpg"] {
-    display: block;
-    margin: 0 auto;
-    width: 300;  /* Asegura que se ajuste al 100% del ancho */
-    max-width: 100%;  /* No se debe estirar más allá de los límites */
 }
