@@ -46,7 +46,7 @@ header {
     justify-content: space-between;  /* Distribuye espacio entre logo y contacto */
     align-items: center;
     padding: 5px 20px;  /* Reduce el padding para que sea más pequeño */
-    background-color: #333;  /* Gris oscuro para la barra superior */
+    background-color: #000;  /* Gris oscuro para la barra superior */
     position: fixed;  /* Fija el header en la parte superior */
     top: 0;
     left: 0;
