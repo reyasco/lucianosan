@@ -42,27 +42,27 @@ img[src*="Hosco.jpg"] {
 /* Header con fondo gris oscuro y texto blanco */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  /* Para distribuir el espacio entre logo y contacto */
     align-items: center;
     padding: 10px 20px;  /* Ajustamos el padding para que sea más pequeño */
-    background-color: #000;  /* Gris oscuro para la barra superior */
+    background-color: #333;  /* Gris oscuro para la barra superior */
     position: fixed;  /* Fija el header en la parte superior */
     top: 0;  /* Asegura que quede en la parte superior */
     left: 0;  /* Alinea a la izquierda */
     width: 100%;  /* Asegura que el header ocupe todo el ancho */
     z-index: 1000;  /* Asegura que el header quede encima de otros elementos */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para el header */
-    height: 30px;  /* Reducimos la altura de la barra de navegación */
+    height: 40px;  /* Reducimos la altura de la barra de navegación */
 }
 
 /* Logo */
 header .logo {
-    font-size: 1.2em;  /* Ajustamos el tamaño del logo */
+    font-size: 1.5em;  /* Restauramos el tamaño original del logo */
     font-weight: bold;
     color: #fff; /* Color de la fuente del logo */
 }
 
-/* Estilo del menú */
+/* Menú de navegación */
 nav ul {
     display: flex;
     list-style-type: none;
@@ -75,12 +75,18 @@ nav ul li {
 nav ul li a {
     color: white;  /* Letras blancas en el menú */
     text-decoration: none;
-    font-size: 0.8em;  /* Ajustamos el tamaño de la fuente en el menú */
+    font-size: 1em;  /* Restauramos el tamaño de fuente original del menú */
     font-weight: bold;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Sección de contacto a la derecha */
+section#contacto {
+    margin-left: auto;  /* Empuja el contenido hacia la derecha */
+    text-align: right;  /* Alinea el texto a la derecha */
 }
 
 /* Ajuste de margen para evitar que el contenido se superponga al header */
