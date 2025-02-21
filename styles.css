@@ -43,7 +43,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
     background-color: #000;  /* Gris oscuro para la barra superior */
     position: fixed;  /* Fija el header en la parte superior */
     top: 0;  /* Asegura que quede en la parte superior */
@@ -54,7 +54,7 @@ header {
 }
 
 header .logo {
-    font-size: 1.5em;
+    font-size: 2.5em;  /* Aumentado el tamaño del logo para hacerlo más grande */
     font-weight: bold;
     color: #fff; /* Color de la fuente del logo */
 }
@@ -98,6 +98,11 @@ img[src*="12.jpg"] + p {
 h1, h2, h3, h4 {
     text-align: center;
     color: #fff; /* Blanco para los títulos */
+}
+
+/* Títulos h1: Hacer que sea el doble de grande */
+h1 {
+    font-size: 6em;  /* Hacemos que el h1 sea el doble de grande */
 }
 
 /* Ajustes para los iframes (videos) */
