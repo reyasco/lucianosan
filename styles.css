@@ -44,23 +44,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #000;  /* Gris oscuro para la barra superior */
+    padding: 10px 20px;  /* Ajustamos el padding para que sea más pequeño */
+    background-color: #333;  /* Gris oscuro para la barra superior */
     position: fixed;  /* Fija el header en la parte superior */
     top: 0;  /* Asegura que quede en la parte superior */
     left: 0;  /* Alinea a la izquierda */
     width: 100%;  /* Asegura que el header ocupe todo el ancho */
     z-index: 1000;  /* Asegura que el header quede encima de otros elementos */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para el header */
-
+    height: 30px;  /* Reducimos la altura de la barra de navegación */
 }
 
+/* Logo */
 header .logo {
-    font-size: 1.5em;
+    font-size: 1.2em;  /* Ajustamos el tamaño del logo */
     font-weight: bold;
     color: #fff; /* Color de la fuente del logo */
 }
 
+/* Estilo del menú */
 nav ul {
     display: flex;
     list-style-type: none;
@@ -73,15 +75,17 @@ nav ul li {
 nav ul li a {
     color: white;  /* Letras blancas en el menú */
     text-decoration: none;
-    font-size: 1em;
+    font-size: 0.8em;  /* Ajustamos el tamaño de la fuente en el menú */
     font-weight: bold;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+/* Ajuste de margen para evitar que el contenido se superponga al header */
 main {
-    padding-top: 80px;  /* Añade un espacio arriba para que no se sobreponga el contenido */
+    padding-top: 50px;  /* Añadimos un espacio arriba para que no se sobreponga el contenido */
 }
 
 img[src*="DSC01951.jpg"] + p,
