@@ -80,6 +80,9 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+main {
+    padding-top: 80px;  /* Añade un espacio arriba para que no se sobreponga el contenido */
+}
 
 img[src*="DSC01951.jpg"] + p,
 img[src*="3.jpg"] + p,
