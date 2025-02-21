@@ -50,7 +50,7 @@ h1, h2, h3, h4 {
 
 /* Ajustes para la imagen DSC01951 (portada) */
 section#portada img {
-    width: 100%;  /* Hace que la imagen ocupe todo el ancho disponible */
+    width: 300;  /* Hace que la imagen ocupe todo el ancho disponible */
     height: auto;  /* Mantiene la proporción de la imagen */
     max-width: 100%;  /* Asegura que no se sobrepase del contenedor */
     display: block;
@@ -59,7 +59,7 @@ section#portada img {
 
 /* Ajustes para la imagen 3.jpg para que no sea demasiado ancha */
 img[src*="3.jpg"] {
-    width: 100%;  /* Ajuste para que no sea demasiado ancha */
+    width: 300;  /* Ajuste para que no sea demasiado ancha */
     max-width: 100%;  /* Asegura que no se estire demasiado */
     height: auto;
     display: block;
@@ -130,17 +130,17 @@ section#contacto a:hover {
 }
 
 /* Ajustes para imágenes grandes como 2.jpg */
-img[src*="2.jpg"] {
+img[src*="12.jpg"] {
     display: block;
     margin: 0 auto;
-    width: 100%;  /* Hacer que se ajuste al 100% de la pantalla */
+    width: 300;  /* Hacer que se ajuste al 100% de la pantalla */
     max-width: 100%;  /* Asegura que no se sobrepase del contenedor */
 }
 
 /* Ajustes para la imagen 2.jpg si no carga */
-img[src*="2.jpg"] {
+img[src*="12.jpg"] {
     display: block;
     margin: 0 auto;
-    width: 100%;  /* Asegura que se ajuste al 100% del ancho */
+    width: 300;  /* Asegura que se ajuste al 100% del ancho */
     max-width: 100%;  /* No se debe estirar más allá de los límites */
 }
