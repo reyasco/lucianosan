@@ -40,26 +40,27 @@ img[src*="Hosco.jpg"] {
 
 
 /* Header con fondo gris oscuro y texto blanco */
+/* Header con fondo gris oscuro y texto blanco */
 header {
     display: flex;
-    justify-content: space-between;  /* Para distribuir el espacio entre logo y contacto */
+    justify-content: space-between;  /* Distribuye espacio entre logo y contacto */
     align-items: center;
-    padding: 10px 20px;  /* Ajustamos el padding para que sea más pequeño */
+    padding: 5px 20px;  /* Reduce el padding para que sea más pequeño */
     background-color: #333;  /* Gris oscuro para la barra superior */
     position: fixed;  /* Fija el header en la parte superior */
-    top: 0;  /* Asegura que quede en la parte superior */
-    left: 0;  /* Alinea a la izquierda */
-    width: 100%;  /* Asegura que el header ocupe todo el ancho */
-    z-index: 1000;  /* Asegura que el header quede encima de otros elementos */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para el header */
-    height: 40px;  /* Reducimos la altura de la barra de navegación */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Asegura que el header ocupe todo el ancho de la página */
+    z-index: 1000;
+    box-sizing: border-box;  /* Asegura que el padding no cause problemas de corte */
+    height: 40px;  /* Reducimos la altura del header */
 }
 
 /* Logo */
 header .logo {
-    font-size: 1.5em;  /* Restauramos el tamaño original del logo */
+    font-size: 1.5em;  /* Tamaño del logo, se mantiene igual */
     font-weight: bold;
-    color: #fff; /* Color de la fuente del logo */
+    color: #fff;  /* Color blanco para el logo */
 }
 
 /* Menú de navegación */
@@ -75,7 +76,7 @@ nav ul li {
 nav ul li a {
     color: white;  /* Letras blancas en el menú */
     text-decoration: none;
-    font-size: 1em;  /* Restauramos el tamaño de fuente original del menú */
+    font-size: 1em;  /* Tamaño de texto original */
     font-weight: bold;
 }
 
@@ -83,16 +84,17 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Sección de contacto a la derecha */
+/* Sección de contacto */
 section#contacto {
     margin-left: auto;  /* Empuja el contenido hacia la derecha */
     text-align: right;  /* Alinea el texto a la derecha */
 }
 
-/* Ajuste de margen para evitar que el contenido se superponga al header */
+/* Ajuste para evitar que el contenido se sobreponga al header */
 main {
-    padding-top: 50px;  /* Añadimos un espacio arriba para que no se sobreponga el contenido */
+    padding-top: 50px;  /* Añadimos espacio arriba para evitar que el contenido se corte */
 }
+
 
 img[src*="DSC01951.jpg"] + p,
 img[src*="3.jpg"] + p,
