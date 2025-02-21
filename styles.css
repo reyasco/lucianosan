@@ -48,16 +48,16 @@ h1, h2, h3, h4 {
     color: #fff; /* Blanco para los títulos */
 }
 
-/* Ajustamos las imágenes */
-section#portada img, section#bio img, section#trabajos img {
-    width: 100%;  /* Asegura que la imagen ocupe todo el ancho disponible */
-    height: auto;  /* Mantiene la proporción */
-    max-width: 100%;
+/* Ajustes para la imagen DSC01951 (portada) */
+section#portada img {
+    width: 100%;  /* Hace que la imagen ocupe todo el ancho disponible */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    max-width: 100%;  /* Asegura que no se sobrepase del contenedor */
     display: block;
     margin: 0 auto; /* Centra la imagen */
 }
 
-/* Ajustamos la imagen 3.jpg para que no sea demasiado ancha */
+/* Ajustes para la imagen 3.jpg para que no sea demasiado ancha */
 img[src*="3.jpg"] {
     width: 100%;  /* Ajuste para que no sea demasiado ancha */
     max-width: 100%;  /* Asegura que no se estire demasiado */
