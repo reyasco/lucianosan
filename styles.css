@@ -8,13 +8,33 @@ body {
 }
 
 /* Ajustamos las imágenes DSC01951.jpg, 3.jpg y 12.jpg */
-img[src*="DSC01951.jpg"],
-img[src*="3.jpg"],
-img[src*="12.jpg"] {
-    width: 250px;  /* Establecer un tamaño fijo para que las imágenes sean pequeñas */
+img[src*="DSC01951.jpg"] {
+    width: 250px;  /* Tamaño fijo */
     height: auto;  /* Mantiene la proporción */
     display: block;
     margin: 0 auto; /* Centra la imagen */
+}
+
+img[src*="3.jpg"] {
+    width: 400px;  /* Tamaño fijo */
+    height: auto;  /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+}
+
+img[src*="12.jpg"] {
+    width: 400px;  /* Tamaño fijo */
+    height: auto;  /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/* Ajustes para la imagen Hosco.jpg */
+img[src*="Hosco.jpg"] {
+    width: 200px;  /* Tamaño fijo más pequeño */
+    height: auto;
+    display: block;
+    margin: 0 auto;  /* Centrado */
 }
 
 /* Texto debajo de cada imagen */
@@ -25,14 +45,6 @@ img[src*="12.jpg"] + p {
     text-align: center;  /* Centrado */
     color: #fff;  /* Blanco para el texto */
     margin-top: 5px;
-}
-
-/* Ajustes para la imagen Hosco.jpg */
-img[src*="Hosco.jpg"] {
-    width: 80%;  /* Ajusta el tamaño de la imagen */
-    height: auto;
-    display: block;
-    margin: 0 auto;  /* Centrado */
 }
 
 /* Header con fondo gris oscuro y texto blanco */
@@ -108,4 +120,32 @@ section#contacto a {
 
 section#contacto a:hover {
     text-decoration: underline;
+}
+
+/* Ajustes para las tablas */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;  /* Border for the tables */
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #444;
+    color: #fff;
+}
+
+/* Títulos de las tablas */
+table caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
 }
