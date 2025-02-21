@@ -1,23 +1,25 @@
+/* Fondo negro y texto blanco */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;  /* Fondo blanco */
-    color: #000;  /* Texto negro */
+    background-color: #000;  /* Fondo negro */
+    color: #fff;  /* Texto blanco */
     margin: 0;
     padding: 0;
 }
 
+/* Header con fondo gris claro y texto negro */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #dcdcdc;  /* Gris claro para la barra superior */
+    background-color: #333;  /* Gris oscuro para la barra superior */
 }
 
 header .logo {
     font-size: 1.5em;
     font-weight: bold;
-    color: #000; /* Color de la fuente del logo */
+    color: #fff; /* Color de la fuente del logo */
 }
 
 nav ul {
@@ -40,32 +42,47 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-main {
-    padding: 20px;
+/* Centramos los títulos */
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #fff; /* Blanco para los títulos */
 }
 
-section#portada img {
-    width: 50%;  /* Reducimos el tamaño de la imagen */
-    height: auto;
+/* Ajustamos las imágenes */
+section#portada img, section#bio img, section#trabajos img {
+    width: 100%;  /* Asegura que la imagen ocupe todo el ancho disponible */
+    height: auto;  /* Mantiene la proporción */
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/* Ajustamos la imagen 3.jpg (aplicamos la misma lógica) */
+.imagen-portada {
+    width: 100%;  /* Asegura que la imagen ocupe todo el ancho disponible */
+    max-width: 100%;  /* Impide que se estire más allá del contenedor */
     display: block;
     margin: 0 auto;
 }
 
+/* Títulos Bio y Trabajos: Agrandamos el tamaño */
+h1 {
+    font-size: 3em; /* Aumentamos el tamaño de los títulos principales */
+}
+
 h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em;  /* Títulos de las secciones, tamaño más grande */
 }
 
 h3 {
-    font-size: 1.5em;
-    margin-top: 20px;
+    font-size: 2em;
 }
 
 h4 {
-    font-size: 1.2em;
-    margin-top: 15px;
+    font-size: 1.5em;
 }
 
+/* Ajustamos la visualización de las tablas */
 table {
     width: 100%;
     margin-top: 10px;
@@ -77,26 +94,25 @@ table td {
     border: 1px solid #ddd;
 }
 
-ul {
-    margin-top: 10px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-/* Estilo para los iframes (video de YouTube y SoundCloud) */
+/* Ajustamos los iframes para que sean más estrechos en la vista móvil y centren todo */
 section#trabajos iframe {
     margin-top: 20px;
     width: 100%;
     max-width: 560px; /* Limita el ancho máximo del iframe para mantener proporciones */
     height: auto;
+    display: block;
+    margin: 0 auto; /* Centra el iframe */
 }
 
-/* Ajustes específicos para el iframe de SoundCloud */
+/* Asegurar que los videos de SoundCloud y YouTube se ajusten */
 section#trabajos iframe[src*="soundcloud.com"] {
-    max-width: 100%; /* Asegura que se ajuste al ancho de cualquier dispositivo */
+    max-width: 100%; /* Asegura que el reproductor de SoundCloud se ajuste al ancho del dispositivo */
     height: 300px; /* Ajusta el alto del iframe para que se vea correctamente */
+}
+
+/* Centrar toda la sección de contacto */
+section#contacto {
+    text-align: center;  /* Centra el contenido de la sección */
 }
 
 /* Estilo para enlaces en la sección de contacto */
@@ -108,3 +124,30 @@ section#contacto a {
 section#contacto a:hover {
     text-decoration: underline;
 }
+
+/* Ajustes para imágenes grandes como 2.jpg y 3.jpg */
+img {
+    width: 100%;
+    max-width: 100%;  /* Evitar que las imágenes se estiren más de lo necesario */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ajustes para la imagen 2.jpg si no carga */
+img[src*="2.jpg"] {
+    display: block;
+    margin: 0 auto;
+    width: 100%;  /* Hacer que se ajuste al 100% de la pantalla */
+    max-width: 100%;  /* Asegura que no se sobrepase del contenedor */
+}
+
+/* Ajustes para la imagen 3.jpg */
+img[src*="3.jpg"] {
+    width: 100%;  /* Ajuste para que no sea demasiado ancha */
+    height: auto;
+    max-width: 100%;  /* Asegura que no se estire demasiado */
+    display: block;
+    margin: 0 auto;
+}
+
