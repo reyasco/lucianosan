@@ -39,34 +39,36 @@ img[src*="Hosco.jpg"] {
 
 
 
-/* Header con fondo gris oscuro y texto blanco */
-/* Header con fondo gris oscuro y texto blanco */
 header {
     display: flex;
-    justify-content: space-between;  /* Distribuye espacio entre logo y contacto */
+    flex-direction: column;  /* Cambiar a columna para que "Luciano" y "Sánchez" estén en líneas separadas */
+    justify-content: center;  /* Centra verticalmente */
     align-items: center;
-    padding: 5px 20px;  /* Reduce el padding para que sea más pequeño */
-    background-color: #000;  /* Gris oscuro para la barra superior */
+    padding: 10px 20px;  /* Añadir más espacio arriba y abajo para evitar que se corte */
+    background-color: #333;  /* Gris oscuro para la barra superior */
     position: fixed;  /* Fija el header en la parte superior */
     top: 0;
     left: 0;
-    width: 100%;  /* Asegura que el header ocupe todo el ancho de la página */
+    width: 100%;  /* Asegura que el header ocupe todo el ancho */
     z-index: 1000;
     box-sizing: border-box;  /* Asegura que el padding no cause problemas de corte */
-    height: 40px;  /* Reducimos la altura del header */
+    height: auto;  /* El alto será automático según el contenido */
+    min-height: 50px;  /* Establecer un mínimo de altura para evitar que se colapse */
 }
 
 /* Logo */
 header .logo {
-    font-size: 1.5em;  /* Tamaño del logo, se mantiene igual */
+    font-size: 1.5em;  /* Tamaño del logo */
     font-weight: bold;
     color: #fff;  /* Color blanco para el logo */
+    line-height: 1;  /* Evita que haya mucho espacio entre "Luciano" y "Sánchez" */
 }
 
 /* Menú de navegación */
 nav ul {
     display: flex;
     list-style-type: none;
+    margin-top: 10px;  /* Espacio entre el logo y el menú */
 }
 
 nav ul li {
@@ -76,7 +78,7 @@ nav ul li {
 nav ul li a {
     color: white;  /* Letras blancas en el menú */
     text-decoration: none;
-    font-size: 1em;  /* Tamaño de texto original */
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -84,15 +86,28 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Sección de contacto */
-section#contacto {
-    margin-left: auto;  /* Empuja el contenido hacia la derecha */
-    text-align: right;  /* Alinea el texto a la derecha */
-}
+/* Para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;  /* Asegura que el logo y el menú estén apilados */
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+    }
 
-/* Ajuste para evitar que el contenido se sobreponga al header */
-main {
-    padding-top: 50px;  /* Añadimos espacio arriba para evitar que el contenido se corte */
+    nav ul {
+        flex-direction: column;  /* Cambia el menú a columna en pantallas pequeñas */
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;  /* Reduce el margen entre los ítems del menú */
+    }
+
+    header .logo {
+        font-size: 1.5em;  /* Mantener el tamaño de la fuente */
+        line-height: 1.2;  /* Mejora el espaciado entre "Luciano" y "Sánchez" */
+    }
 }
 
 
