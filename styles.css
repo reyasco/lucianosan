@@ -106,13 +106,15 @@ h1 {
 }
 
 /* Ajustes para los iframes (videos) */
-section#trabajos iframe {
+section#trabajos iframe + p {
     margin-top: 20px;
     width: 100%;
     height: 315px; /* Altura de 16:9 proporcional */
     max-width: 560px; /* Limita el ancho máximo del iframe para mantener proporciones */
     display: block;
     margin: 0 auto; /* Centra el iframe */
+    font-size: 0.8em;  /* Texto más pequeño */
+    color: #fff;  /* Blanco para el texto */
 }
 
 /* Ajustes para el reproductor de SoundCloud */
