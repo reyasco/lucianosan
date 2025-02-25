@@ -115,26 +115,27 @@ h1 {
 }
 
 /* Ajustes para los iframes (videos) */
-section#trabajos iframe + p {
+section#trabajos iframe {
     margin-top: 20px;
     width: 100%;
     height: 315px; /* Altura de 16:9 proporcional */
     max-width: 560px; /* Limita el ancho máximo del iframe para mantener proporciones */
     display: block;
     margin: 0 auto; /* Centra el iframe */
-    font-size: 0.8em;  /* Texto más pequeño */
-    text-align: center;  /* Centrado */
-    color: #fff;  /* Blanco para el texto */
 
 }
 
 /* Ajustes para el reproductor de SoundCloud */
-section#trabajos iframe[src*="soundcloud.com"] {
+section#trabajos iframe[src*="soundcloud.com"] + p,
+section#trabajos iframe[src*="youtube.com"] + p {
     max-width: 600px; /* Lo hace un poco más estrecho */
     width: 90%;  /* En dispositivos pequeños, se ajusta al 90% del ancho de la pantalla */
     height: 600px; /* Aumentamos la altura para que se vea más contenido */
     display: block;
     margin: 0 auto; /* Centrado del reproductor */
+    font-size: 0.8em;  /* Texto más pequeño */
+    text-align: center;  /* Centrado */
+    color: #fff;  /* Blanco para el texto */
 }
 
 
