@@ -133,10 +133,9 @@ section#trabajos iframe[src*="youtube.com"] + p {
     height: 600px; /* Aumentamos la altura para que se vea más contenido */
     display: block;
     margin: 0 auto; /* Centrado del reproductor */
-    font-size: 0.9em;  /* Texto más pequeño */
+    font-size: 0.8em;  /* Texto más pequeño */
     text-align: center;  /* Centrado */
     color: #fff;  /* Blanco para el texto */
-    margin-top: 5px;
 }
 
 
