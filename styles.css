@@ -5,12 +5,23 @@ body {
     color: #fff;  /* Texto blanco */
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 /* Ajustamos las imágenes DSC01951.jpg, 3.jpg y 12.jpg */
-img[src*="DSC01951.jpg"],
-img[src*="3.jpg"],
+img[src*="DSC01951.jpg"] {
+    width: 70%;  /* Tamaño fijo */
+    height: auto;  /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+}
+
+img[src*="3.jpg"] {
+    width: 70%;  /* Tamaño fijo */
+    height: auto;  /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+}
+
 img[src*="12.jpg"] {
     width: 70%;  /* Tamaño fijo */
     height: auto;  /* Mantiene la proporción */
@@ -23,43 +34,42 @@ img[src*="Hosco.jpg"] {
     width: 200px;  /* Tamaño fijo más pequeño */
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto;  /* Centrado */
 }
 
-/* Header */
+
+
 header {
     display: flex;
-    justify-content: flex-start; /* Alineación a la izquierda */
+    justify-content: flex-start;  /* Alineación a la izquierda */
     align-items: center;
-    padding: 10px 20px;  /* Menor padding para reducir la altura */
-    background-color: #000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;  /* Reducido el padding para que la altura sea menor */
+    background-color: #000;  /* Gris oscuro para la barra superior */
+    position: fixed;  /* Fija el header en la parte superior */
+    top: 0;  /* Asegura que quede en la parte superior */
+    left: 0;  /* Alinea a la izquierda */
+    width: 100%;  /* Asegura que el header ocupe todo el ancho */
+    z-index: 1000;  /* Asegura que el header quede encima de otros elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para el header */
 }
 
 header .logo {
-    font-size: 1em; /* Igual que los otros enlaces */
+    font-size: 1em; /* Ajustado al mismo tamaño que las otras palabras del header */
     font-weight: bold;
-    color: #fff;
+    color: #fff; /* Color de la fuente del logo */
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
-    margin-left: 20px;
 }
 
 nav ul li {
     margin: 0 15px;
-    position: relative;
 }
 
 nav ul li a {
-    color: white;
+    color: white;  /* Letras blancas en el menú */
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
@@ -69,87 +79,59 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Submenú desplegable para Bio (si se necesita) */
-nav ul li:hover .sub-menu {
-    display: block;
-}
-
-.sub-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    min-width: 200px;
-    padding: 10px;
-}
-
-.sub-menu li {
-    margin: 5px 0;
-}
-
-/* Espacio superior para el contenido */
+/* Ajuste de margen para evitar que el contenido se superponga al header */
 main {
-    padding-top: 80px;
+    padding-top: 80px;  /* Añade un espacio arriba para que no se sobreponga el contenido */
 }
 
-/* Títulos centrados */
+
+img[src*="DSC01951.jpg"] + p,
+img[src*="3.jpg"] + p,
+img[src*="12.jpg"] + p {
+    font-size: 0.5em;  /* Texto más pequeño */
+    text-align: center;  /* Centrado */
+    color: #fff;  /* Blanco para el texto */
+    margin-top: 5px;
+}
+
+/* Centramos los títulos */
 h1, h2, h3, h4 {
     text-align: center;
-    color: #fff;
+    color: #fff; /* Blanco para los títulos */
 }
 
-/* h1 mantiene su tamaño original */
+/* Títulos h1: Hacer que sea el doble de grande */
 h1 {
-    font-size: 6em;
+    font-size: 6em;  /* Hacemos que el h1 sea el doble de grande */
 }
 
-/* Ajustes para los iframes (videos de Vimeo y demás) */
+/* Ajustes para los iframes (videos) */
 section#trabajos iframe {
     margin-top: 20px;
     width: 100%;
-    height: 315px; /* Proporción 16:9 */
-    max-width: 560px;
+    height: 315px; /* Altura de 16:9 proporcional */
+    max-width: 560px; /* Limita el ancho máximo del iframe para mantener proporciones */
     display: block;
-    margin: 0 auto;
-    /* Nota: El iframe de Vimeo tiene estilos inline para posicionamiento; 
-       estos se conservan, pero el contenedor se centrará */
-}
-
-/* Centrar los contenedores de Vimeo */
-.vimeo-container {
-    display: block;
-    margin: 0 auto;
-    max-width: 560px;
-    position: relative;
-    padding: 0; /* Si es necesario, elimina padding adicional */
-}
-
-/* Forzar que los captions debajo de Vimeo y SoundCloud tengan fuente de 8px */
-p.caption {
-    font-size: 8px !important;
-    text-align: center;
-    color: #fff !important;
-    margin-top: 2px !important;
-    padding-top: 0 !important;
+    margin: 0 auto; /* Centra el iframe */
+    font-size: 0.8em;  /* Texto más pequeño */
+    color: #fff;  /* Blanco para el texto */
 }
 
 /* Ajustes para el reproductor de SoundCloud */
 section#trabajos iframe[src*="soundcloud.com"] {
-    max-width: 600px;
-    width: 90%;
-    height: 600px;
+    max-width: 600px; /* Lo hace un poco más estrecho */
+    width: 90%;  /* En dispositivos pequeños, se ajusta al 90% del ancho de la pantalla */
+    height: 600px; /* Aumentamos la altura para que se vea más contenido */
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; /* Centrado del reproductor */
 }
 
-/* Sección de contacto centrada */
+/* Centrar toda la sección de contacto */
 section#contacto {
-    text-align: center;
+    text-align: center;  /* Centra el contenido de la sección */
 }
 
+/* Estilo para enlaces en la sección de contacto */
 section#contacto a {
     color: #d9d3ee;
     text-decoration: none;
@@ -164,7 +146,7 @@ table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
-    border: 1px solid #ddd;
+    border: 1px solid #ddd;  /* Border for the tables */
 }
 
 table td {
@@ -180,8 +162,10 @@ table th {
     color: #fff;
 }
 
+/* Títulos de las tablas */
 table caption {
     font-size: 1.5em;
     font-weight: bold;
     margin: 10px 0;
 }
+
