@@ -169,3 +169,18 @@ table caption {
     margin: 10px 0;
 }
 
+/* Centrar los contenedores de Vimeo */
+.vimeo-container {
+    margin: 0 auto;
+    max-width: 560px; /* Ajusta según necesites */
+    position: relative;
+  }
+  
+  /* Forzar que las descripciones debajo de Vimeo y SoundCloud tengan 8px */
+  .caption {
+    font-size: 8px !important;
+    text-align: center;
+    color: #fff;
+    margin-top: 5px;
+  }
+  
