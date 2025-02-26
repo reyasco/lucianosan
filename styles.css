@@ -197,6 +197,8 @@ table caption {
     .vimeo-container + p.caption {
       margin-top: 2px !important;
       padding-top: 0 !important;
+      width: 560px !important;  /* Ancho fijo para desktop */
+    margin: 0 auto
     }
   }
   
