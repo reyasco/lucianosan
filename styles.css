@@ -174,6 +174,14 @@ table caption {
     margin: 0 auto;
     max-width: 560px; /* Ajusta según necesites */
     position: relative;
+    margin-bottom: 0
+
+
+  }
+
+  .vimeo-container + p.caption {
+    margin-top: 2px !important;
+    padding-top: 0 !important;
   }
   
   /* Forzar que las descripciones debajo de Vimeo y SoundCloud tengan 8px */
