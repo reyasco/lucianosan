@@ -192,3 +192,19 @@ table caption {
     margin-top: 2px;
   }
   
+  @media screen and (min-width: 1024px) {
+    /* Para pantallas grandes (desktop) */
+    .vimeo-container + p.caption {
+      margin-top: 2px !important;
+      padding-top: 0 !important;
+    }
+  }
+  
+  /* Si no lo tienes ya, forzamos la regla para todos los captions */
+  p.caption {
+    font-size: 8px !important;
+    text-align: center;
+    color: #fff;
+    margin-top: 2px !important;
+    padding-top: 0 !important;
+  }
